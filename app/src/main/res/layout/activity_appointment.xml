@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Screen Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- CNIC -->
+        <EditText
+            android:id="@+id/etCnic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CNIC (xxxxx-xxxxxxx-x)"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Date of Birth -->
+        <Button
+            android:id="@+id/btnDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date of Birth"
+            android:layout_marginBottom="15dp"
+            android:padding="12dp"
+            android:layout_gravity="start"/>
+
+        <!-- Appointment Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Type"
+            android:textColor="#0D47A1"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Appointment Date -->
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Appointment Date"
+            android:padding="12dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Appointment Time -->
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Appointment Time"
+            android:padding="12dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#0D47A1"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/rMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginEnd="20dp"/>
+
+            <RadioButton
+                android:id="@+id/rFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <!-- Terms & Conditions -->
+        <CheckBox
+            android:id="@+id/checkTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Terms and Conditions"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Booking"
+            android:layout_gravity="center"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>
